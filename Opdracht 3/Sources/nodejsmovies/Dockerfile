@@ -17,9 +17,9 @@ RUN npm install
 
 CMD [ "npm", "run", "movies" ]
 
-# build:  docker build --no-cache -t centricms/nodejsmovies .
-# run:    docker run --name nodejsmovies -d -p 8090:4201 centricms/nodejsmovies
-# delete: docker rm -f nodejsmovies
-# push:   docker push centricms/nodejsmovies
-# pull:   docker pull centricms/nodejsmovies
-# in:     docker exec -it nodejsmovies /bin/sh
+# build:  docker image build --no-cache -t centricms/nodejsmovies .
+# run:    docker container run --name nodejsmovies -d -p 8090:4201 centricms/nodejsmovies
+# delete: docker container rm -f nodejsmovies
+# push:   docker image push centricms/nodejsmovies
+# pull:   docker image pull centricms/nodejsmovies
+# in:     docker image exec -it nodejsmovies /bin/sh
