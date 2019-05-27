@@ -4,7 +4,7 @@ var bodyParser = require('body-parser');
 var express = require('express');
 var router = express.Router();
 router.use(bodyParser.json());
-router.use(bodyParser.urlencoded());
+router.use(bodyParser.urlencoded({ extended: false }));
 
 var movies = require('./movies.json')
 
