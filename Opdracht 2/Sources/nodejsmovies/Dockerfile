@@ -18,7 +18,7 @@ RUN npm install
 CMD [ "npm", "run", "movies" ]
 
 # build:  docker image build -t centricms/opdracht2-nodejsmovies .
-# run:    docker container run --name opdracht2-api --network="opdracht2-network" -d -p 8090:80 centricms/opdracht2-nodejsmovies
+# run:    docker container run --name opdracht2-api --network="opdracht2-network" -d -p 8090:8080 centricms/opdracht2-nodejsmovies
 # delete: docker container rm -f opdracht2-nodejsmovies
 # push:   docker image push centricms/opdracht2-nodejsmovies
 # pull:   docker image pull centricms/opdracht2-nodejsmovies
