@@ -1,11 +1,15 @@
 ﻿
 Microsoft Visual Studio Solution File, Format Version 12.00
-# Visual Studio 15
-VisualStudioVersion = 15.0.26430.14
+# Visual Studio Version 17
+VisualStudioVersion = 17.6.33829.357
 MinimumVisualStudioVersion = 10.0.40219.1
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "MVCCore", "MVCCore\MVCCore.csproj", "{A91FCC8D-2347-4D96-BAB9-DAD11D80903F}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "MVCCore", "MVCCore\MVCCore.csproj", "{CBC6DE29-AE82-4DC3-A8B7-2972E55CE437}"
 EndProject
-Project("{E53339B2-1760-4266-BCC7-CA923CBCF16C}") = "docker-compose", "docker-compose.dcproj", "{0ED7B9F4-41D7-485A-A169-75A3F3B69436}"
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "docker-compose", "docker-compose", "{D2C50522-47BA-409A-A306-83D8CFCC6A88}"
+	ProjectSection(SolutionItems) = preProject
+		docker-compose.ci.build.yml = docker-compose.ci.build.yml
+		docker-compose.yml = docker-compose.yml
+	EndProjectSection
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -13,25 +17,15 @@ Global
 		Release|Any CPU = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(ProjectConfigurationPlatforms) = postSolution
-		{A91FCC8D-2347-4D96-BAB9-DAD11D80903F}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
-		{A91FCC8D-2347-4D96-BAB9-DAD11D80903F}.Debug|Any CPU.Build.0 = Debug|Any CPU
-		{A91FCC8D-2347-4D96-BAB9-DAD11D80903F}.Release|Any CPU.ActiveCfg = Release|Any CPU
-		{A91FCC8D-2347-4D96-BAB9-DAD11D80903F}.Release|Any CPU.Build.0 = Release|Any CPU
-		{0ED7B9F4-41D7-485A-A169-75A3F3B69436}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
-		{0ED7B9F4-41D7-485A-A169-75A3F3B69436}.Debug|Any CPU.Build.0 = Debug|Any CPU
-		{0ED7B9F4-41D7-485A-A169-75A3F3B69436}.Release|Any CPU.ActiveCfg = Release|Any CPU
-		{0ED7B9F4-41D7-485A-A169-75A3F3B69436}.Release|Any CPU.Build.0 = Release|Any CPU
+		{CBC6DE29-AE82-4DC3-A8B7-2972E55CE437}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{CBC6DE29-AE82-4DC3-A8B7-2972E55CE437}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{CBC6DE29-AE82-4DC3-A8B7-2972E55CE437}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{CBC6DE29-AE82-4DC3-A8B7-2972E55CE437}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
 	EndGlobalSection
-	GlobalSection(TeamFoundationVersionControl) = preSolution
-		SccNumberOfProjects = 2
-		SccEnterpriseProvider = {4CA58AB2-18FA-4F8D-95D4-32DDF27D184C}
-		SccTeamFoundationServer = https://centricrenzo.visualstudio.com/
-		SccLocalPath0 = .
-		SccProjectUniqueName1 = MVCCore\\MVCCore.csproj
-		SccProjectName1 = MVCCore
-		SccLocalPath1 = MVCCore
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {5C9C3A3E-53F2-498B-B9BE-ADCB964AAFDB}
 	EndGlobalSection
 EndGlobal
